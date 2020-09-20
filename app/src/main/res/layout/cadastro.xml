@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/agendamentoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agendamento"
+        android:textColor="#212121"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="79dp"
+        tools:layout_editor_absoluteY="27dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/NometextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Nome"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="121dp" />
+
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Ex: Alisson Junior"
+        android:inputType="text"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc"
+        app:layout_constraintTop_toBottomOf="@+id/NometextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/dataTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Data"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edNome"
+        tools:layout_editor_absoluteX="55dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edData"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="Ex: 20/11/2020"
+        android:inputType="datetime"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc"
+        app:layout_constraintTop_toBottomOf="@+id/dataTextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/medicoTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Médico"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edData"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <EditText
+        android:id="@+id/edMedico"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="Ex: Gabril Sementino"
+        android:inputType="text"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc"
+        app:layout_constraintTop_toBottomOf="@+id/medicoTextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+    <TextView
+        android:id="@+id/telefoneTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:inputType="text"
+        android:text="Telefone"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edMedico"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <EditText
+        android:id="@+id/edTelefone"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="Ex: 45 998062725"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc"
+        app:layout_constraintTop_toBottomOf="@+id/telefoneTextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Email"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/edTelefone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <EditText
+        android:id="@+id/edEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:hint="Ex: alisson.chagas@unipar.br"
+        android:inputType="text"
+        android:textColor="#263238"
+        android:textColorHint="#cfd8dc"
+        app:layout_constraintTop_toBottomOf="@+id/emailTextView"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="604dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
